@@ -5,7 +5,7 @@ const matchList = document.getElementById('match-list');
 const searchStates = async searchText => {
     console.log(searchText);
    
-        const res = await fetch('http://127.0.0.1:5500/JS/Completar_JSON/Completar_JSON/data/states.json');
+        const res = await fetch('data/states.json');
         
       
             const states = await res.json();

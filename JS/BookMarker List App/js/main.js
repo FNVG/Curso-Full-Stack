@@ -7,6 +7,7 @@ function saveBookmark(e) {
     //Get form values
     var siteName = document.getElementById('siteName').value;
     var siteUrl = document.getElementById('siteUrl').value;
+    console.log("siteUrl: "+siteUrl);
     //Prevent form from submitting
    
     if(!siteName || !siteUrl) {
@@ -71,13 +72,13 @@ function fetchBookmarks(){
     for (var i = 0; i < bookmarks.length; i++){
         var name = bookmarks[i].name;
         var url = bookmarks[i].url;
-
+        console.log("url: "+bookmarks[i].url);
         bookmarksResults.innerHTML += '<div class="well">'+
                                         '<h3>'+name+
-                                        '<a class="btn btn-default" target="_blank" href=">'+url+'">Visit</a> '+
+                                        '<a class="btn btn-default" target="_blank" href="'+url+'">Visit</a> '+
                                         '<a onclick="deleteBookmark(\''+url+'\')" class="btn btn-danger"  href="#">Delete</a>'+
                                         '</h3>'+
                                         '</div>'
                                         ;
     }
-}i
+}
