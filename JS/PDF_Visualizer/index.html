@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Download PDF on Button Click</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <h1>
+        How to Download PDF File on Button
+        Click using JavaScript
+    </h1>
+    <p>
+        You can add your content here...
+    </p>
+    <div id="content">
+        <table>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Age</th>
+                    <th>Country</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Employee 1</td>
+                    <td>30</td>
+                    <td>USA</td>
+                </tr>
+                <tr>
+                    <td>Employee 2</td>
+                    <td>25</td>
+                    <td>Canada</td>
+                </tr>
+                <tr>
+                    <td>Employee 3</td>
+                    <td>21</td>
+                    <td>Canada</td>
+                </tr>
+                <tr>
+                    <td>Employee 4</td>
+                    <td>22</td>
+                    <td>India</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <button id="download_Btn">
+        Download PDF
+    </button>
+
+    <script>
+        document.getElementById('download_Btn').addEventListener('click', function() {
+            // Redirigir al archivo PDF para descargar
+            window.location.href = 'docs/pdf.pdf';
+        });
+    </script>
+</body>
+</html>
